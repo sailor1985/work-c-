@@ -18,11 +18,22 @@ if (result2)
 else
     Console.WriteLine("Некорректный ввод данных");
 
+if (result1 & result2)
+{
 if (a > b)
-   Console.WriteLine($" Первое число {a} больше второго числа {b}");
+{
+    Console.WriteLine($" Первое число {a} больше второго числа {b}");
+} 
+else if (b > a)
+{
+    Console.WriteLine($"Второе число {b} больше первого числа {a}");
+}
 else
-    if (b > a)
-       Console.WriteLine($"Второе число {b} больше первого числа {a}");
-    else
-       if (a == b)
-          Console.WriteLine("Число 1 и число 2 одинаковые");
+{
+    Console.WriteLine("Число 1 и число 2 равны друг другу");
+}                           
+}
+else
+{
+    Console.WriteLine("Некорректно введено либо число 1. либо число 2, либо оба");
+}
