@@ -1,0 +1,28 @@
+//Console.WriteLine("Введи число");
+//int a = int.Parse(Console.ReadLine());
+
+//Console.WriteLine("Введи число");
+//int b = int.Parse(Console.ReadLine());
+
+//if (a == b * b) Console.WriteLine("Является");
+//else if (a * a == b) Console.WriteLine("Является");
+//else Console.WriteLine("Не является");
+
+
+
+
+/*Console.WriteLine("Введи число от 1 до 7");
+int a = int.Parse(Console.ReadLine());
+
+if (a == 1) Console.WriteLine("Понедельник");
+if (a == 2) Console.WriteLine("Вторник");
+if (a == 3) Console.WriteLine("Среда");
+if (a == 4) Console.WriteLine("Четверг");
+if (a == 5) Console.WriteLine("Пятница");
+if (a == 6) Console.WriteLine("Суббота");
+if (a == 7) Console.WriteLine("Воскресенье");*/
+
+/*string[] list = new string[] {"Понедельник", "Вторник", "Среда", "четверг", "пятница", "Суббота", "Воскресенье"};
+Console.WriteLine("Введи число от 1 до 7");
+int a = int.Parse(Console.ReadLine());
+Console.WriteLine(list[a-1]);*/
