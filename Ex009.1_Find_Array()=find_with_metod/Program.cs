@@ -21,7 +21,6 @@ void PrintArray(int[] col)
     }
 }
 
-//int find = 31;
 int Indexof(int[] collection, int find)
 {
     int count = collection.Length;
@@ -30,8 +29,12 @@ int Indexof(int[] collection, int find)
     while (index < count)
     {
         if (collection[index] == find)
-        position =index;
-        break;
+        {
+            position =index;
+            Console.WriteLine($"Индекс элемента массива равного {find} - {position}");
+            break;
+        }
+    index++;
     }
     return position;
 }
@@ -41,4 +44,4 @@ int[] array = new int[10];
 FillArray(array);
 PrintArray(array);
 
-int pos = Indexof(array, 4);
+Indexof(array, 3);
