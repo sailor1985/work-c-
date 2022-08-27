@@ -1,22 +1,23 @@
-﻿//void Method1()  //Ничего не принимает и не возвращает
-//{
-   // Console.WriteLine("Автор");
-//}
-//Method1();
+﻿void Method1()  //Ничего не принимает и не возвращает
+{
+   Console.WriteLine("Автор");
+}
+Method1();
 
-//void Method2(string msg)   //Что-то принимает и ничего не возвращает
-//{
-   //Console.WriteLine(msg);
-//}
-//Method2("Текст сообщения");
+void Method2(string msg)   //Что-то принимает и ничего не возвращает
+{
+   Console.WriteLine(msg);
+}
+Method2("Текст сообщения");
 
-//int Method3() //Что-то возвращает, но ничего не принимает
-//{
-   //return DateTime.Now.Year;
-//}
-//int year = Method3();
-//Console.WriteLine(year);
-string Method4(int count, string text)
+int Method3() //Что-то возвращает, но ничего не принимает
+{
+   return DateTime.Now.Year;
+}
+int year = Method3();
+Console.WriteLine(year);
+
+string Method4(int count, string text) //Что-то принимает и возвращает
 {
     int i = 0;
     string result = String.Empty;
