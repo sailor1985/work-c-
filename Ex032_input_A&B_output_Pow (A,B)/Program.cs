@@ -6,7 +6,7 @@ int numberA = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите число B");
 int numberB = int.Parse(Console.ReadLine()!);
 
-double Method(double A, double B)
+double Method(int A, int B)
 {
     double result = 0;
     if (A > 0 && B > 0)
