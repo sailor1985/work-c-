@@ -2,15 +2,13 @@
 Console.WriteLine("Введите число");
 int number = int.Parse(Console.ReadLine()!);
 
-int Method (int numberA)
+int Method(int numberA)
 {
-int num = 1;
-int fact = 1;
-while (num <= numberA)
-{
-    fact = fact *num;
-    num = num +1;
-}
+    int fact = 1;
+    for (int num = 2; num <= numberA; num++)
+    {
+        fact = fact * num;
+    }
     return fact;
 }
 
