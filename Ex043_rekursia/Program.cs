@@ -7,5 +7,5 @@
 }
 for (int i = 1; i < 40; i++)
 {
-    Console.WriteLine(Factorial(i));
+    Console.WriteLine($"{i}! = {Factorial(i)}");
 }
