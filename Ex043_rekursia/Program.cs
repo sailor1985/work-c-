@@ -1,4 +1,4 @@
-﻿int Factorial(int n)
+﻿double Factorial(int n)
 {
     // 1! = 1
     // 0! = 1
