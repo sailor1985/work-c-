@@ -6,14 +6,26 @@ int numberA = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите число B");
 int numberB = int.Parse(Console.ReadLine()!);
 
-double Method(int A, int B)
+void fillArray(int[] fill, int A)
 {
-    double result = 0;
-    if (A > 0 && B > 0)
+    for (int i = 0; i < fill.Length; i++)
     {
-        result = Math.Pow(A, B);
+        fill[i] = A;
+    }
+}
+
+int Stepen(int[] arr)
+{
+    int result = 1;
+    for (int i = 0; i <= arr.Length - 1; i++)
+    {
+        result = result * arr[i];
     }
     return result;
 }
 
-Console.WriteLine(Method(numberA, numberB));
+int[] array = new int[numberB];
+fillArray(array, numberA);
+Console.WriteLine();
+Console.Write($"{numberA} в степени {numberB} равно: ");
+Console.WriteLine(Stepen(array));
