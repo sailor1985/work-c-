@@ -1,6 +1,6 @@
 ﻿//Напишите программу, которая будет преобразовывать десятичное число в двоичное.
 Console.WriteLine("Введите число: ");
-int number = int.Parse(Console.ReadLine());
+int number = int.Parse(Console.ReadLine()!);
 
 string res1 = Convert.ToString(number, 2);
 string res2 = DecToNum(number, 2);
