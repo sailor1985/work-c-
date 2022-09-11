@@ -24,7 +24,7 @@ void PrintArray(int[,] inArray)
     }
 }
 
-void FindNumberWithTheDesiredIndex(int[,] array, int Indexrow, int Indexcolumn)
+void FindNumber(int[,] array, int Indexrow, int Indexcolumn)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -48,6 +48,7 @@ void SearchFind(int[,] array, int find)
             if (array[i, j] == find)
             {
                 quantity++;
+                break;
             }
         }
     }
@@ -57,7 +58,7 @@ void SearchFind(int[,] array, int find)
     }
     else
     {
-        Console.WriteLine($"Заданного число в массиве НЕТ");
+        Console.WriteLine($"Заданного числа в массиве НЕТ");
     }
 }
 
@@ -75,7 +76,7 @@ void Result()
     Console.Write($"Введите индекс столбца элемента массива, который не больше {columns - 1}: ");
     int indexcolumn = int.Parse(Console.ReadLine()!);
 
-    FindNumberWithTheDesiredIndex(array, indexrow, indexcolumn);
+    FindNumber(array, indexrow, indexcolumn);
     Console.WriteLine();
 
     Console.Write("Введите число, которое хотите найти в массиве: ");
