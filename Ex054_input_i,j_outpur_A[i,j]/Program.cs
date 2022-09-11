@@ -48,7 +48,6 @@ void SearchFind(int[,] array, int find)
             if (array[i, j] == find)
             {
                 quantity++;
-                break;
             }
         }
     }
