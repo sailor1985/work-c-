@@ -32,9 +32,3 @@ printArray(Elements1);
 
 Console.Write("Нажмите [Enter] для выхода...");
 Console.ReadLine();
-
-//string[] Elements2 = new string[3];
-//for (int i = 0; i < 3; i++)
-//{
-// Elements1[i] = Console.ReadLine()!;
-//}
