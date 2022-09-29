@@ -32,3 +32,4 @@ printArray(Elements1);
 
 Console.Write("Нажмите [Enter] для выхода...");
 Console.ReadLine();
+
